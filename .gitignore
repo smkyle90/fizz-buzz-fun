@@ -1,2 +1,32 @@
+# Folders and directories
 __pycache__
-venv/
+
+
+# Database
+*.sqlite
+
+# Compiled
+*.pyc
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.ipynb
+*.txt
+*.png
+*.mov
+*.trc
+*.log
+*.mp4
+*.zip
+*.json
+*.mpg
+
+# Ignore folders
+auth
+venv
+
+# DO not ignore
+!requirements.txt

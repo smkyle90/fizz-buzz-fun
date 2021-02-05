@@ -1,5 +1,6 @@
 #! /usr/bin/env python3
 
+
 class FizzBuzz:
     def __init__(self, word, div):
         """A FizzBuzz class that associated a divisor
