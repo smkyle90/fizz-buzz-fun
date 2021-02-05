@@ -36,3 +36,5 @@ class FizzBuzz:
         else:
             raise TypeError("Divisor must be of type int and be greater than zero.")
 
+    def __repr__(self):
+        return "Word: {}. Divisor: {}".format(self.word, self.div)
