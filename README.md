@@ -6,8 +6,9 @@ This application is currently accessible at
 
 ## Implemententation
 
-Flask
-Python
-Apache2
+- Flask
+- Python
+- Apache2
 
 ## Contribute!
+Contribute to this repository by submitting a PR!
