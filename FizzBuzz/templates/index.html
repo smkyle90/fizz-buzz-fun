@@ -16,6 +16,27 @@
         padding: 5px;
         text-align: left;
     }
+
+    table td:first-child {
+      width: 5em;
+      min-width: 5em;
+      max-width: 5em;
+      padding: 5px;
+      text-align: center;
+    }
+
+    table th:first-child {
+      width: 5em;
+      min-width: 5em;
+      max-width: 5em;
+      padding: 5px;
+      text-align: center;
+    }
+
+    input {
+        width: 30%;
+    }
+
 </style>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script>
@@ -47,9 +68,13 @@
 <body>
     <h1>Let's play FizzBuzz</h1>
 
-<a href="https://leetcode.com/problems/fizz-buzz/">Fizz Buzz</a><br><br>
+<p>For more information on what FizzBuzz is, read <a href="https://leetcode.com/problems/fizz-buzz/">this</a>.</p>
 
-This is an application that allows you to see how FizzBuzz is implemented, but not so much for the actual algorithmic implementation of FizzBuzz, but for some interesting or useful tools that are required to build a simple application.<br><br>
+<p>This is an application that allows you to see <em>an</em> implementation of FizzBuzz, but not so much for the actual algorithmic implementation, but for some interesting and/or useful tools that are required to build a <em>simple</em> application.</p>
+
+<p>The purpose is to be an open source Flask and Python project that anyone can contribute to to show the beauty of building software. The first implementation of this is uses Python to solve the FizzBuzz problem. Being Python, it is done in a very Pythonic way -- using list comprehension. We add the ability to sort the input data, comprised of Words and associated Divisors, using a lambda function. The Github repo can be seen <a href="https://github.com/smkyle90/fizz-buzz-fun">here</a>. Intentionally, some stuff is done in a sloppy way to allow the community to add their flavour. Please contribute!</p>
+
+<p>In its current state, the algorithm runs with an upper bound of O(n*log(n)) time. With no sorting, the application run in O(n) time.</p>
 
 <h3>Start by adding each word and associated divisor.</h3>
     <form>
@@ -74,13 +99,13 @@ This is an application that allows you to see how FizzBuzz is implemented, but n
     <button type="button" class="delete-row">Delete Selected Row(s)</button><br><br>
 
     <h3>Configure some parameters.</h3>
-    <input type="number" name="fbNumber" id="fbNumber" placeholder="Number you want to check" value=""><br>
-    <input type="text" name="fbSeparator" id="fbSeparator" placeholder="String Separator" value=""><br>
+    <input type="number" name="fbNumber" id="fbNumber" placeholder="Number you want to check. If blank, we run for 1 to 100." value="">
+    <input type="text" name="fbSeparator" id="fbSeparator" placeholder="String Separator" value="">
+    <input type="submit" value="Run FizzBuzz" size=100%><br>
     <input type="checkbox" id="fbSortNumeric" name="fbSortNumeric">
-        <label for="fbSortNumeric">Sort divisors from smallest to largest</label><br>
+        <label for="fbSortNumeric">Sort divisors from smallest to largest</label>
     <input type="checkbox" id="fbSortAlphabetical" name="fbSortAlphabetical">
-        <label for="fbSortAlphabetical">Sort words in alphabetical order</label><br>
-    <input type="submit" value="Run FizzBuzz">
+        <label for="fbSortAlphabetical">Sort words in alphabetical order</label>
 
     </form>
 

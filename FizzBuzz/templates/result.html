@@ -1,5 +1,13 @@
-<h1>The answer for number  {{ number }} is {{ result }}!</h1>
+<h1>The answer for number  {{ number }}</h1>
+
+{% with messages = get_flashed_messages() %} {% if messages %}
+    <div class="notification is-danger">
+      {{ messages[0] }}
+    </div>
+{% endif %} {% endwith %}
+
+{{ result | safe }}
 
 <form action="{{ url_for('main.index') }}">
-    <input type="submit" value="Start Again" />
+    <input type="submit" value="Play Again" />
 </form>
