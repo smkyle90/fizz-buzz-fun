@@ -1,6 +1,16 @@
 """App entry point."""
+
+import sys
+
+print (sys.path,flush=True)
+
+sys.path.insert(0, "/var/www/FizzBuzz")
+
+print (sys.path, flush=True)
+
 from FizzBuzz import create_app  # pylint: disable=no-name-in-module
 
+#print (FizzBuzz.__file__)
 application = create_app()
 
 # if __name__ == "__main__":
