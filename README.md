@@ -24,7 +24,7 @@ This application is currently accessible at [fizzbuzzfun.duckdns.org](https://fi
 	flask run
 	```
 
-- The application will be viewable in your browser at [localhost:5000](localhost:5000). You can run `export FLASK_DEBUG=1` if you want to debug the application.
+- The application will be viewable in your browser at [localhost:5000](http://localhost:5000). You can run `export FLASK_DEBUG=1` if you want to debug the application.
 
 - You can configure the application to run on an Apache server. We recommend reading the documentation on how to do this [here](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps).
 
