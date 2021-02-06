@@ -15,15 +15,14 @@ def index():
 
 @main.route("/execute", methods=["POST"])
 def execute():
+    # Get the data from the form on the index page
     request_dict = request.form.to_dict()
-
-    fb_data = [(k, int(v.strip("/"))) for k, v in request_dict.items() if "fb" not in k]
-    fb_list = [FizzBuzz(*fb) for fb in fb_data]
 
     # Extract parameters from form
     number = request_dict["fbNumber"]
     separator = str(request_dict["fbSeparator"])
 
+    # Figure out what range of numbers are are doing this for
     if number:
         num_range = [int(number)]
         num_show = number
@@ -31,15 +30,21 @@ def execute():
         num_range = [i + 1 for i in range(100)]
         num_show = "1 to 100"
 
+    # Defaults for sorting.
     sort_numeric = False
     sort_alphabetic = False
 
+    # Figure out if we've set them
     if "fbSortNumeric" in request_dict:
         if request_dict["fbSortNumeric"] == "on":
             sort_numeric = True
     elif "fbSortAlphabetical" in request_dict:
         if request_dict["fbSortAlphabetical"] == "on":
             sort_alphabetic = True
+
+    # Convert into the form accepted by run_fizz_buzz
+    fb_data = [(k, int(v.strip("/"))) for k, v in request_dict.items() if "fb" not in k]
+    fb_list = [FizzBuzz(*fb) for fb in fb_data]
 
     try:
         result = [
