@@ -1,9 +1,9 @@
 
 # FizzBuzz Fun!
 
-This is an application that allows you to see *an* implementation of FizzBuzz, but not so much for the actual algorithmic implementation, but for some interesting and/or useful tools that are required to build a *simple* application.
+This is an application that allows you to see *an* implementation of FizzBuzz. This isn't much for the actual algorithmic implementation, but for some interesting and/or useful tools that are required to build a *simple* application.
 
-The purpose is to be an open source Flask and Python project that anyone can contribute to to show the beauty of building software. The first implementation of this is uses Python to solve the FizzBuzz problem, but not only for "Fizz" and associated divisor 3, and "Buzz" and 5, but for any combination of word and divisor, like "Foo" and 2 and "Bar" and 7. Neat!
+The purpose is to be an open source Flask and Python project that anyone can contribute to to show the beauty of building software. The first implementation of this is uses Python to solve the FizzBuzz problem, not only for the word "Fizz" and associated divisor 3, and "Buzz" and 5, but for any combination of word and divisor, like "Humpty" and 2 and "Dumpty" and 7. Neat!
 
 This application is currently accessible at [fizzbuzzfun.duckdns.org](https://fizzbuzzfun.duckdns.org).
 
