@@ -14,13 +14,15 @@ This application is currently accessible at [fizzbuzzfun.duckdns.org](https://fi
 
 ## Running
 - Running on your local machine:
-	1. Clone this application to a reasonable location.
-	2. Run `cd fizz_buzz_fun`,
-	3. `python3 -m venv venv`,
-	4. `source venv/bin/activate`,
-	5. `pip install -r requirements.txt`,
-	6. `export FLASK_APP=FizzBuzz`, then
-	7. `flask run`.
+	```
+	git clone https://github.com/smkyle/fizz_buzz_fun.git
+	cd fizz_buzz_fun
+	python3 -m venv venv
+	source venv/bin/activate
+	pip install -r requirements.txt
+	export FLASK_APP=FizzBuzz
+	flask run
+	```
 
 - The application will be viewable in your browser at [localhost:5000](localhost:5000). You can run `export FLASK_DEBUG=1` if you want to debug the application.
 
